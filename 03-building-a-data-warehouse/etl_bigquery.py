@@ -86,5 +86,5 @@ if __name__ == "__main__":
                 for each in data:
                     writer.writerow([each["id"], each["type"]])
 
-    main(dataset_id="github", table_id="events",file_path="events_json_path.csv")   
+    main(dataset_id="github", table_id="events",file_path="github_events.csv")   
     #ชื่อตารางที่จะส่ง
