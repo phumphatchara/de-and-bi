@@ -83,7 +83,7 @@ def main():
     # load_tables(cur, conn)
     # insert_tables(cur, conn)
 
-    query = "select * from category"
+    query = "select * from category"    #การคิวรี่
     cur.execute(query)
     records = cur.fetchall()
     for row in records:
