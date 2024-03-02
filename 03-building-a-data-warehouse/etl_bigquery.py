@@ -57,6 +57,7 @@ def main(dataset_id, table_id, file_path):
         schema=[
             bigquery.SchemaField("id", bigquery.SqlTypeNames.STRING),
             bigquery.SchemaField("type", bigquery.SqlTypeNames.STRING),
+            bigquery.SchemaField("actor", bigquery.SqlTypeNames.STRING),
         ],
     )
 
@@ -78,13 +79,17 @@ if __name__ == "__main__":
 
     with open("github_events.csv", "w") as csv_file:
         writer = csv.writer(csv_file)
-        writer.writerow(["id","type"])
+        writer.writerow(["id","type","login"])
 
         for datafile in all_files:
             with open(datafile, "r") as f:
                 data = json.loads(f.read())
                 for each in data:
-                    writer.writerow([each["id"], each["type"]])
+                    writer.writerow(
+                        [each["id"], 
+                        each["type"],
+                        each["actor"]["login"],
+                        ])
 
     main(dataset_id="github", table_id="events",file_path="github_events.csv")   
     #ชื่อตารางที่จะส่ง
