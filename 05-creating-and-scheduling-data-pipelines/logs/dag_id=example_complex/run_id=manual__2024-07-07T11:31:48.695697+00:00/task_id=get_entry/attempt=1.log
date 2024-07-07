@@ -1,0 +1,21 @@
+[2024-07-07T11:32:02.458+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-07T11:32:02.662+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_complex.get_entry manual__2024-07-07T11:31:48.695697+00:00 [queued]>
+[2024-07-07T11:32:02.707+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_complex.get_entry manual__2024-07-07T11:31:48.695697+00:00 [queued]>
+[2024-07-07T11:32:02.710+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-07T11:32:02.753+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): get_entry> on 2024-07-07 11:31:48.695697+00:00
+[2024-07-07T11:32:02.828+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=32269) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-07T11:32:02.837+0000] {standard_task_runner.py:63} INFO - Started process 32370 to run task
+[2024-07-07T11:32:02.851+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'example_complex', 'get_entry', 'manual__2024-07-07T11:31:48.695697+00:00', '--job-id', '8', '--raw', '--subdir', '/home/***/.local/lib/python3.12/site-packages/***/example_dags/example_complex.py', '--cfg-path', '/tmp/tmp72y8jq38']
+[2024-07-07T11:32:02.885+0000] {standard_task_runner.py:91} INFO - Job 8: Subtask get_entry
+[2024-07-07T11:32:03.085+0000] {task_command.py:426} INFO - Running <TaskInstance: example_complex.get_entry manual__2024-07-07T11:31:48.695697+00:00 [running]> on host 64c03b0d339f
+[2024-07-07T11:32:03.535+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_complex' AIRFLOW_CTX_TASK_ID='get_entry' AIRFLOW_CTX_EXECUTION_DATE='2024-07-07T11:31:48.695697+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-07T11:31:48.695697+00:00'
+[2024-07-07T11:32:03.545+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-07T11:32:03.553+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-07-07T11:32:03.565+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo get_entry']
+[2024-07-07T11:32:03.758+0000] {subprocess.py:86} INFO - Output:
+[2024-07-07T11:32:03.761+0000] {subprocess.py:93} INFO - get_entry
+[2024-07-07T11:32:03.786+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-07T11:32:03.787+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-07T11:32:03.865+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_complex, task_id=get_entry, run_id=manual__2024-07-07T11:31:48.695697+00:00, execution_date=20240707T113148, start_date=20240707T113202, end_date=20240707T113203
+[2024-07-07T11:32:04.047+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-07T11:32:04.062+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

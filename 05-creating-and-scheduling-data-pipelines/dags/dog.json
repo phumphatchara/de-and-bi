@@ -1,0 +1,1 @@
+{"status": "error", "message": "No route found for \"GET http://dog.ceo/api/breeds/image/random%20Fetch!\" with code: 0", "code": 404}
