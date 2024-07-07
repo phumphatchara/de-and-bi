@@ -4168,3 +4168,10 @@ IndentationError: unexpected indent
 [2024-07-07T16:14:40.932+0000] {logging_mixin.py:188} INFO - [2024-07-07T16:14:40.932+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-07-07T16:14:40.954+0000] {logging_mixin.py:188} INFO - [2024-07-07T16:14:40.954+0000] {dag.py:3954} INFO - Setting next_dagrun for dog_api_pipeline to 2024-07-07 00:00:00+00:00, run_after=2024-07-08 00:00:00+00:00
 [2024-07-07T16:14:40.972+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dog_api_pipeline.py took 0.080 seconds
+[2024-07-07T16:15:11.469+0000] {processor.py:161} INFO - Started process (PID=181966) to work on /opt/airflow/dags/dog_api_pipeline.py
+[2024-07-07T16:15:11.470+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dog_api_pipeline.py for tasks to queue
+[2024-07-07T16:15:11.471+0000] {logging_mixin.py:188} INFO - [2024-07-07T16:15:11.471+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dog_api_pipeline.py
+[2024-07-07T16:15:11.477+0000] {processor.py:840} INFO - DAG(s) 'dog_api_pipeline' retrieved from /opt/airflow/dags/dog_api_pipeline.py
+[2024-07-07T16:15:11.496+0000] {logging_mixin.py:188} INFO - [2024-07-07T16:15:11.495+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T16:15:11.516+0000] {logging_mixin.py:188} INFO - [2024-07-07T16:15:11.515+0000] {dag.py:3954} INFO - Setting next_dagrun for dog_api_pipeline to 2024-07-07 00:00:00+00:00, run_after=2024-07-08 00:00:00+00:00
+[2024-07-07T16:15:11.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dog_api_pipeline.py took 0.072 seconds
