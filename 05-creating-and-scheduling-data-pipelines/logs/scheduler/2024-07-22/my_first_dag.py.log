@@ -1227,3 +1227,24 @@
 [2024-07-22T13:58:52.315+0000] {logging_mixin.py:188} INFO - [2024-07-22T13:58:52.314+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-07-22T13:58:52.324+0000] {logging_mixin.py:188} INFO - [2024-07-22T13:58:52.324+0000] {dag.py:3954} INFO - Setting next_dagrun for my_first_dag to None, run_after=None
 [2024-07-22T13:58:52.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_first_dag.py took 0.165 seconds
+[2024-07-22T13:59:22.998+0000] {processor.py:161} INFO - Started process (PID=50246) to work on /opt/airflow/dags/my_first_dag.py
+[2024-07-22T13:59:22.998+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_first_dag.py for tasks to queue
+[2024-07-22T13:59:22.999+0000] {logging_mixin.py:188} INFO - [2024-07-22T13:59:22.999+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dag.py
+[2024-07-22T13:59:23.004+0000] {processor.py:840} INFO - DAG(s) 'my_first_dag' retrieved from /opt/airflow/dags/my_first_dag.py
+[2024-07-22T13:59:23.021+0000] {logging_mixin.py:188} INFO - [2024-07-22T13:59:23.021+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-22T13:59:23.031+0000] {logging_mixin.py:188} INFO - [2024-07-22T13:59:23.031+0000] {dag.py:3954} INFO - Setting next_dagrun for my_first_dag to None, run_after=None
+[2024-07-22T13:59:23.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_first_dag.py took 0.057 seconds
+[2024-07-22T13:59:53.492+0000] {processor.py:161} INFO - Started process (PID=50529) to work on /opt/airflow/dags/my_first_dag.py
+[2024-07-22T13:59:53.494+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_first_dag.py for tasks to queue
+[2024-07-22T13:59:53.495+0000] {logging_mixin.py:188} INFO - [2024-07-22T13:59:53.494+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dag.py
+[2024-07-22T13:59:53.501+0000] {processor.py:840} INFO - DAG(s) 'my_first_dag' retrieved from /opt/airflow/dags/my_first_dag.py
+[2024-07-22T13:59:53.518+0000] {logging_mixin.py:188} INFO - [2024-07-22T13:59:53.518+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-22T13:59:53.530+0000] {logging_mixin.py:188} INFO - [2024-07-22T13:59:53.529+0000] {dag.py:3954} INFO - Setting next_dagrun for my_first_dag to None, run_after=None
+[2024-07-22T13:59:53.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_first_dag.py took 0.063 seconds
+[2024-07-22T14:00:24.197+0000] {processor.py:161} INFO - Started process (PID=50811) to work on /opt/airflow/dags/my_first_dag.py
+[2024-07-22T14:00:24.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_first_dag.py for tasks to queue
+[2024-07-22T14:00:24.198+0000] {logging_mixin.py:188} INFO - [2024-07-22T14:00:24.198+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dag.py
+[2024-07-22T14:00:24.203+0000] {processor.py:840} INFO - DAG(s) 'my_first_dag' retrieved from /opt/airflow/dags/my_first_dag.py
+[2024-07-22T14:00:24.220+0000] {logging_mixin.py:188} INFO - [2024-07-22T14:00:24.220+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-22T14:00:24.230+0000] {logging_mixin.py:188} INFO - [2024-07-22T14:00:24.230+0000] {dag.py:3954} INFO - Setting next_dagrun for my_first_dag to None, run_after=None
+[2024-07-22T14:00:24.249+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_first_dag.py took 0.057 seconds
